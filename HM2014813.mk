@@ -371,6 +371,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, build/target/product/full.mk)
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
-
-# call the proprietary setup
-$(call inherit-product, device/xiaomi/HM2014813/vendor/copyfiles.mk)
