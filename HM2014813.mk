@@ -190,12 +190,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Camera2
 
-# FM
+# FM radio
 PRODUCT_PACKAGES += \
     FM2 \
     FMRecord \
     libqcomfm_jni \
-    qcom.fmradio
+    qcom.fmradio \
+    qcom.fmradio.xml
+
+PRODUCT_BOOT_JARS += qcom.fmradio
 
 #fstab.qcom
 PRODUCT_PACKAGES += \
@@ -299,6 +302,42 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.target.rc:root/init.target.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.rc:root/ueventd.rc
+
+# Charger images
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/ramdisk/poweroffcharge:root/sbin/poweroffcharge \
+	$(LOCAL_PATH)/charger/background.png:root/res/images/background.png \
+	$(LOCAL_PATH)/charger/chargeLogo.png:root/res/images/chargeLogo.png \
+	$(LOCAL_PATH)/charger/error.png:root/res/images/error.png \
+	$(LOCAL_PATH)/charger/full.png:root/res/images/full.png \
+	$(LOCAL_PATH)/charger/green_0.png:root/res/images/green_0.png \
+	$(LOCAL_PATH)/charger/green_1.png:root/res/images/green_1.png \
+	$(LOCAL_PATH)/charger/percentage_full.png:root/res/images/percentage_full.png \
+	$(LOCAL_PATH)/charger/percentage.png:root/res/images/percentage.png \
+	$(LOCAL_PATH)/charger/POWER0.png:root/res/images/POWER0.png \
+	$(LOCAL_PATH)/charger/POWER10.png:root/res/images/POWER10.png \
+	$(LOCAL_PATH)/charger/POWER1.png:root/res/images/POWER1.png \
+	$(LOCAL_PATH)/charger/POWER2.png:root/res/images/POWER2.png \
+	$(LOCAL_PATH)/charger/POWER3.png:root/res/images/POWER3.png \
+	$(LOCAL_PATH)/charger/POWER4.png:root/res/images/POWER4.png \
+	$(LOCAL_PATH)/charger/POWER5.png:root/res/images/POWER5.png \
+	$(LOCAL_PATH)/charger/POWER6.png:root/res/images/POWER6.png \
+	$(LOCAL_PATH)/charger/POWER7.png:root/res/images/POWER7.png \
+	$(LOCAL_PATH)/charger/POWER8.png:root/res/images/POWER8.png \
+	$(LOCAL_PATH)/charger/POWER9.png:root/res/images/POWER9.png \
+	$(LOCAL_PATH)/charger/red_0.png:root/res/images/red_0.png \
+	$(LOCAL_PATH)/charger/red_1.png:root/res/images/red_1.png \
+	$(LOCAL_PATH)/charger/red_2.png:root/res/images/red_2.png \
+	$(LOCAL_PATH)/charger/red_3.png:root/res/images/red_3.png \
+	$(LOCAL_PATH)/charger/red_4.png:root/res/images/red_4.png \
+	$(LOCAL_PATH)/charger/red_5.png:root/res/images/red_5.png \
+	$(LOCAL_PATH)/charger/red_6.png:root/res/images/red_6.png \
+	$(LOCAL_PATH)/charger/red_7.png:root/res/images/red_7.png \
+	$(LOCAL_PATH)/charger/red_8.png:root/res/images/red_8.png \
+	$(LOCAL_PATH)/charger/red_9.png:root/res/images/red_9.png \
+	$(LOCAL_PATH)/charger/red_9.png:root/res/images/red_9.png \
+	$(LOCAL_PATH)/charger/mmi/fail.png:root/res/images/mmi/fail.png \
+	$(LOCAL_PATH)/charger/mmi/pass.png:root/res/images/mmi/pass.png
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
