@@ -368,10 +368,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     wcnss_service
 
-PRODUCT_PACKAGES += \
-    wpa_supplicant_overlay.conf \
-    p2p_supplicant_overlay.conf
-
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=128m
 
@@ -410,3 +406,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, build/target/product/full.mk)
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
+
+$(call inherit-product, device/xiaomi/HM2014813/vendor/copyfiles.mk)

@@ -130,6 +130,10 @@ on boot
     #For bridgemgr daemon to inform the USB driver of the correct transport
     chown radio radio /sys/class/android_usb/f_rmnet_smd_sdio/transport
 
+    # For setting tcp delayed ack
+    chown system system /sys/kernel/ipv4/tcp_delack_seg
+    chown system system /sys/kernel/ipv4/tcp_use_userconfig
+
 #   Define TCP buffer sizes for various networks
 #   ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
     setprop net.tcp.buffersize.default 4096,87380,110208,4096,16384,110208
@@ -801,8 +805,11 @@ service hcidump /system/bin/sh /system/etc/hcidump.sh
     disabled
     oneshot
 
-service charger /charger
+
+service poweroffcharge /sbin/poweroffcharge
     class charger
+    critical
+    seclabel u:r:healthd:s0
 
 service ssr_diag /system/bin/ssr_diag
     class late_start
@@ -837,8 +844,8 @@ on property:persist.usb.hvdcp.detect=false
     stop hvdcp
 
 service charger_monitor /system/bin/charger_monitor
-    user system
-    group system
+    user root
+    group root
     disabled
 
 service qbcharger /charger -m 1
