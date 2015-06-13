@@ -51,11 +51,11 @@ PRODUCT_COPY_FILES += \
 
 # gps/location secuity configuration file
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/sec_config:system/etc/sec_config
+    device/xiaomi/HM2014813/etc/sec_config:system/etc/sec_config
 
 # Listen configuration file
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/listen_platform_info.xml:system/etc/listen_platform_info.xml
+    device/xiaomi/HM2014813/etc/listen_platform_info.xml:system/etc/listen_platform_info.xml
 
 PRODUCT_COPY_FILES += \
     device/xiaomi/HM2014813/etc/capability.xml:system/etc/capability.xml \
@@ -198,10 +198,6 @@ PRODUCT_PACKAGES += \
     qcom.fmradio.xml
 
 PRODUCT_BOOT_JARS += qcom.fmradio
-
-#fstab.qcom
-PRODUCT_PACKAGES += \
-    fstab.qcom
 
 PRODUCT_PACKAGES += \
     libqcompostprocbundle \
@@ -349,10 +345,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
-
-# Vold
-PRODUCT_PACKAGES += \
-    vold.fstab
 
 # Wifi
 PRODUCT_PACKAGES += \
