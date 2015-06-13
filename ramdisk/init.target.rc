@@ -59,8 +59,6 @@ on post-fs-data
     mkdir /tombstones/lpass 0771 system system
     mkdir /tombstones/wcnss 0771 system system
     mkdir /tombstones/dsps 0771 system system
-    mkdir /persist/data/sfs 0700 system system
-    mkdir /persist/data/tz 0700 system system
 
 #start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
@@ -132,6 +130,7 @@ on charger
    start qcom-post-boot
 
 on boot
+    start rmt_storage
     insmod /system/lib/modules/adsprpc.ko
 
 # +Caiyebo.wt, add, 20141210 for setGamma & setCe color adjust
