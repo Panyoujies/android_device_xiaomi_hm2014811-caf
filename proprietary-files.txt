@@ -897,14 +897,14 @@ vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so
 
 # Sound param
-etc/sound_param/HM2014813/Bluetooth_cal.acdb
-etc/sound_param/HM2014813/General_cal.acdb
-etc/sound_param/HM2014813/Global_cal.acdb
-etc/sound_param/HM2014813/Handset_cal.acdb
-etc/sound_param/HM2014813/Hdmi_cal.acdb
-etc/sound_param/HM2014813/Headset_cal.acdb
-etc/sound_param/HM2014813/Speaker_cal.acdb
-etc/sound_param/HM2014813/mixer_paths.xml
+etc/sound_param/HM2014811/Bluetooth_cal.acdb
+etc/sound_param/HM2014811/General_cal.acdb
+etc/sound_param/HM2014811/Global_cal.acdb
+etc/sound_param/HM2014811/Handset_cal.acdb
+etc/sound_param/HM2014811/Hdmi_cal.acdb
+etc/sound_param/HM2014811/Headset_cal.acdb
+etc/sound_param/HM2014811/Speaker_cal.acdb
+etc/sound_param/HM2014811/mixer_paths.xml
 etc/sound_param/cherry/Bluetooth_cal.acdb
 etc/sound_param/cherry/General_cal.acdb
 etc/sound_param/cherry/Global_cal.acdb

@@ -15,4 +15,4 @@
 
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/full_HM2014813.mk
+	$(LOCAL_DIR)/full_HM2014811.mk

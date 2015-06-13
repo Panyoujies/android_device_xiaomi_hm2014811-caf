@@ -19,9 +19,9 @@
 # Product-specific compile-time definitions.
 #
 USE_CAMERA_STUB := false
-LOCAL_PATH := device/xiaomi/HM2014813
+LOCAL_PATH := device/xiaomi/HM2014811
 
--include vendor/xiaomi/HM2014813/BoardConfigVendor.mk
+-include vendor/xiaomi/HM2014811/BoardConfigVendor.mk
 
 PRODUCT_PACKAGES := $(filter-out mount.exfat, $(PRODUCT_PACKAGES))
 

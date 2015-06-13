@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VENDOR=xiaomi
-DEVICE=HM2014813
+DEVICE=HM2014811
 
 function extract() {
     for FILE in `egrep -v '(^#|^$)' $1`; do

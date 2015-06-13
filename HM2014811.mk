@@ -16,23 +16,23 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-LOCAL_PATH := device/xiaomi/HM2014813
+LOCAL_PATH := device/xiaomi/HM2014811
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # media_profiles and media_codecs xmls for 8916
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/media/media_profiles.xml:system/etc/media_profiles.xml \
-    device/xiaomi/HM2014813/media/media_codecs.xml:system/etc/media_codecs.xml
+    device/xiaomi/HM2014811/media/media_profiles.xml:system/etc/media_profiles.xml \
+    device/xiaomi/HM2014811/media/media_codecs.xml:system/etc/media_codecs.xml
 
 # Audio configuration file
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/xiaomi/HM2014813/etc/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
-    device/xiaomi/HM2014813/etc/mixer_paths_qrd_skuh.xml:system/etc/mixer_paths_qrd_skuh.xml \
-    device/xiaomi/HM2014813/etc/mixer_paths_qrd_skui.xml:system/etc/mixer_paths_qrd_skui.xml \
-    device/xiaomi/HM2014813/etc/mixer_paths_qrd_skuhf.xml:system/etc/mixer_paths_qrd_skuhf.xml \
-    device/xiaomi/HM2014813/etc/mixer_paths.xml:system/etc/mixer_paths.xml
+    device/xiaomi/HM2014811/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/xiaomi/HM2014811/etc/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
+    device/xiaomi/HM2014811/etc/mixer_paths_qrd_skuh.xml:system/etc/mixer_paths_qrd_skuh.xml \
+    device/xiaomi/HM2014811/etc/mixer_paths_qrd_skui.xml:system/etc/mixer_paths_qrd_skui.xml \
+    device/xiaomi/HM2014811/etc/mixer_paths_qrd_skuhf.xml:system/etc/mixer_paths_qrd_skuhf.xml \
+    device/xiaomi/HM2014811/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -51,46 +51,46 @@ PRODUCT_COPY_FILES += \
 
 # gps/location secuity configuration file
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/etc/sec_config:system/etc/sec_config
+    device/xiaomi/HM2014811/etc/sec_config:system/etc/sec_config
 
 # Listen configuration file
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/etc/listen_platform_info.xml:system/etc/listen_platform_info.xml
+    device/xiaomi/HM2014811/etc/listen_platform_info.xml:system/etc/listen_platform_info.xml
 
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/etc/capability.xml:system/etc/capability.xml \
-    device/xiaomi/HM2014813/etc/qlog-conf.xml:system/etc/qlog-conf.xml \
-    device/xiaomi/HM2014813/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
-    device/xiaomi/HM2014813/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml
+    device/xiaomi/HM2014811/etc/capability.xml:system/etc/capability.xml \
+    device/xiaomi/HM2014811/etc/qlog-conf.xml:system/etc/qlog-conf.xml \
+    device/xiaomi/HM2014811/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+    device/xiaomi/HM2014811/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml
 
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/etc/whitelist_appops.xml:system/etc/whitelist_appops.xml
+    device/xiaomi/HM2014811/etc/whitelist_appops.xml:system/etc/whitelist_appops.xml
 
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    device/xiaomi/HM2014813/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    device/xiaomi/HM2014813/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    device/xiaomi/HM2014813/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-    device/xiaomi/HM2014813/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+    device/xiaomi/HM2014811/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    device/xiaomi/HM2014811/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    device/xiaomi/HM2014811/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    device/xiaomi/HM2014811/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+    device/xiaomi/HM2014811/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 # Logmask
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/etc/logmask/default_diag_mask.cfg:system/etc/logmask/default_diag_mask.cfg \
-    device/xiaomi/HM2014813/etc/logmask/dynamic_debug_mask.cfg:system/etc/logmask/dynamic_debug_mask.cfg \
-    device/xiaomi/HM2014813/etc/logmask/qdss.cfg:system/etc/logmask/qdss.cfg
+    device/xiaomi/HM2014811/etc/logmask/default_diag_mask.cfg:system/etc/logmask/default_diag_mask.cfg \
+    device/xiaomi/HM2014811/etc/logmask/dynamic_debug_mask.cfg:system/etc/logmask/dynamic_debug_mask.cfg \
+    device/xiaomi/HM2014811/etc/logmask/qdss.cfg:system/etc/logmask/qdss.cfg
 
 # Offmode charge
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_0.png:root/res/images/charger/battery_0.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_1.png:root/res/images/charger/battery_1.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_2.png:root/res/images/charger/battery_2.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_3.png:root/res/images/charger/battery_3.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_4.png:root/res/images/charger/battery_4.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_5.png:root/res/images/charger/battery_5.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_charge.png:root/res/images/charger/battery_charge.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_fail.png:root/res/images/charger/battery_fail.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/mmi/fail.png:root/res/images/mmi/fail.png \
-    device/xiaomi/HM2014813/ramdisk/res/images/mmi/pass.png:root/res/images/mmi/pass.png
+    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_0.png:root/res/images/charger/battery_0.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_1.png:root/res/images/charger/battery_1.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_2.png:root/res/images/charger/battery_2.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_3.png:root/res/images/charger/battery_3.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_4.png:root/res/images/charger/battery_4.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_5.png:root/res/images/charger/battery_5.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_charge.png:root/res/images/charger/battery_charge.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_fail.png:root/res/images/charger/battery_fail.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/mmi/fail.png:root/res/images/mmi/fail.png \
+    device/xiaomi/HM2014811/ramdisk/res/images/mmi/pass.png:root/res/images/mmi/pass.png
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -398,4 +398,4 @@ $(call inherit-product, build/target/product/full.mk)
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
 
-$(call inherit-product, device/xiaomi/HM2014813/vendor/copyfiles.mk)
+$(call inherit-product, device/xiaomi/HM2014811/vendor/copyfiles.mk)
