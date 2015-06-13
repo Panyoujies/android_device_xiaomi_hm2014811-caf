@@ -81,7 +81,6 @@ PRODUCT_COPY_FILES += \
 
 # Offmode charge
 PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014813/ramdisk/sbin/charger:root/sbin/charger \
     device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_0.png:root/res/images/charger/battery_0.png \
     device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_1.png:root/res/images/charger/battery_1.png \
     device/xiaomi/HM2014813/ramdisk/res/images/charger/battery_2.png:root/res/images/charger/battery_2.png \
