@@ -21,7 +21,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),HM2014811)
-include device/xiaomi/HM2014811/kernel/AndroidKernel.mk
+ifeq ($(TARGET_DEVICE),hm2014811)
+include device/xiaomi/hm2014811/kernel/AndroidKernel.mk
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

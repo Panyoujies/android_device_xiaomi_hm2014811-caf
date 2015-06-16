@@ -1,9 +1,8 @@
-#Android makefile to build kernel as a part of Android Build
 PERL		= perl
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 
-LOCAL_PRIVATE_PATH := device/xiaomi/HM2014811/kernel
+LOCAL_PRIVATE_PATH := device/xiaomi/hm2014811/kernel
 
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 KERNEL_CONFIG := $(LOCAL_PRIVATE_PATH)/user/.config

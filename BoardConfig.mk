@@ -19,9 +19,9 @@
 # Product-specific compile-time definitions.
 #
 USE_CAMERA_STUB := false
-LOCAL_PATH := device/xiaomi/HM2014811
+LOCAL_PATH := device/xiaomi/hm2014811
 
--include vendor/xiaomi/HM2014811/BoardConfigVendor.mk
+-include vendor/xiaomi/hm2014811/BoardConfigVendor.mk
 
 PRODUCT_PACKAGES := $(filter-out mount.exfat, $(PRODUCT_PACKAGES))
 
@@ -139,7 +139,7 @@ USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/xiaomi/HM2014811/init/init_hm2014811.c
+TARGET_LIBINIT_DEFINES_FILE := device/xiaomi/hm2014811/init/init_hm2014811.c
 
 # RIL
 TARGET_RIL_VARIANT := caf

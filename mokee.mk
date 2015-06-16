@@ -18,15 +18,15 @@
 $(call inherit-product, vendor/mk/config/cdma.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/xiaomi/HM2014811/full_HM2014811.mk)
+$(call inherit-product, device/xiaomi/hm2014811/full_hm2014811.mk)
 
 # Torch
 PRODUCT_PACKAGES += \
     Torch
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := HM2014811
-PRODUCT_NAME := mk_HM2014811
+PRODUCT_DEVICE := hm2014811
+PRODUCT_NAME := mk_hm2014811
 
 PRODUCT_DEFAULT_LANGUAGE := zh
 PRODUCT_DEFAULT_REGION := CN
