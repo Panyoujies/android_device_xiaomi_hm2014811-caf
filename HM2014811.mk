@@ -140,9 +140,13 @@ PRODUCT_PACKAGES += \
     libbson
 
 PRODUCT_PACKAGES += \
-	libemoji \
-	libion
+    libemoji \
+    libion
 
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8916
+    
 # STk
 PRODUCT_PACKAGES += \
     Stk
@@ -188,16 +192,6 @@ PRODUCT_PACKAGES += \
 # Flatland
 PRODUCT_PACKAGES += \
     Camera2
-
-# FM radio
-PRODUCT_PACKAGES += \
-    FM2 \
-    FMRecord \
-    libqcomfm_jni \
-    qcom.fmradio \
-    qcom.fmradio.xml
-
-PRODUCT_BOOT_JARS += qcom.fmradio
 
 PRODUCT_PACKAGES += \
     libqcompostprocbundle \
@@ -250,14 +244,6 @@ PRODUCT_BOOT_JARS += \
 # Power HAL
 PRODUCT_PACKAGES += \
     power.msm8916
-
-# GPS
-PRODUCT_PACKAGES += \
-    gps.msm8916 \
-    libgps.utils \
-    libloc_eng \
-    libloc_api_v02 \
-    libloc_adapter
 
 PRODUCT_PACKAGES += \
     Torch
