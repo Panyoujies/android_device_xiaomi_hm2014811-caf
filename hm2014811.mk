@@ -47,7 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DPM
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/etc/dpm/fdMgr/fd.conf:system/etc/dpm/fdMgr/fd.conf
+    $(LOCAL_PATH)/etc/dpm/fdMgr/fd.conf:system/etc/dpm/fdMgr/fd.conf
 
 # gps/location secuity configuration file
 PRODUCT_COPY_FILES += \
@@ -376,3 +376,5 @@ $(call inherit-product, build/target/product/full.mk)
 $(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
 
 $(call inherit-product, device/xiaomi/hm2014811/vendor/copyfiles.mk)
+
+$(call inherit-product-if-exists, vendor/xiaomi/hm2014811/hm2014811-vendor.mk)
