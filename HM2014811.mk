@@ -79,19 +79,6 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/HM2014811/etc/logmask/dynamic_debug_mask.cfg:system/etc/logmask/dynamic_debug_mask.cfg \
     device/xiaomi/HM2014811/etc/logmask/qdss.cfg:system/etc/logmask/qdss.cfg
 
-# Offmode charge
-PRODUCT_COPY_FILES += \
-    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_0.png:root/res/images/charger/battery_0.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_1.png:root/res/images/charger/battery_1.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_2.png:root/res/images/charger/battery_2.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_3.png:root/res/images/charger/battery_3.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_4.png:root/res/images/charger/battery_4.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_5.png:root/res/images/charger/battery_5.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_charge.png:root/res/images/charger/battery_charge.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/charger/battery_fail.png:root/res/images/charger/battery_fail.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/mmi/fail.png:root/res/images/mmi/fail.png \
-    device/xiaomi/HM2014811/ramdisk/res/images/mmi/pass.png:root/res/images/mmi/pass.png
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -248,6 +235,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Torch
 
+# etc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/hcidump.sh:system/etc/hcidump.sh \
     $(LOCAL_PATH)/etc/hsic.control.bt.sh:system/etc/hsic.control.bt.sh \
@@ -264,11 +252,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
     $(LOCAL_PATH)/etc/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh \
     $(LOCAL_PATH)/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
-    $(LOCAL_PATH)/etc/init.qcom.uicc.sh:system/etc/init.qcom.uicc.sh \
+    $(LOCAL_PATH)/etc/init.qcom.uicc.sh:system/etc/init.qcom.uicc.sh
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(LOCAL_PATH)/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    $(LOCAL_PATH)/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    $(LOCAL_PATH)/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
+#ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/fstab.qcom:root/fstab.qcom \
     $(LOCAL_PATH)/ramdisk/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
@@ -284,9 +275,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.rc:root/ueventd.rc
 
-# Charger images
+# Charger
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/ramdisk/poweroffcharge:root/sbin/poweroffcharge \
+	$(LOCAL_PATH)/ramdisk/sbin/poweroffcharge:root/sbin/poweroffcharge \
 	$(LOCAL_PATH)/charger/background.png:root/res/images/background.png \
 	$(LOCAL_PATH)/charger/chargeLogo.png:root/res/images/chargeLogo.png \
 	$(LOCAL_PATH)/charger/error.png:root/res/images/error.png \
